@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SCS O-Camp 2015</title>
+<style type="text/css">
+body {
+  background: #000;
+}
+
+.sliding-doors {
+	width: 960px;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+	background-position:center;
+	background-image: url('images/ocampposter.jpg');
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+
+.sliding-doors:before,
+.sliding-doors:after {
+  content: "";
+  width: 50%;
+  height: 600px;
+  left: 0;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: 2000ms;
+  background-image: url('images/danger.jpg');
+}
+
+.sliding-doors:hover:before {
+  left: -460px;
+}
+
+.sliding-doors:hover:after {
+  left: 460px;
+
+}
+.block {
+	overflow: hidden;
+	position: absolute;
+	width: 960px;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+.block p {
+	color: #FFF;
+	font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<img src="images/ocampwebbanner.jpg" width="960" >
+<div class="sliding-doors"></div
+><div class="block"><a href="https://www.facebook.com/hkpususcs"><img src="images/fb_icon_325x325.png" width="55" height="51"></a>
+<p>Copyright &copy; The 22nd Society of Computing Studies, HKPUSU.</p>
+</div>
+</body>
+</html>
